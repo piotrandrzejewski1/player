@@ -6,8 +6,8 @@ namespace Player.IAdapters
     public interface INavigationService
     {
         void Navigate(PageNames uri, bool animated = true);
-        void GoBack(bool animated = true = true);
+        void GoBack(bool animated = true);
         void PopFromBackstack();
-        void PopFromAllBackstack();
+        void PopAllFromBackstack();
     }
 }

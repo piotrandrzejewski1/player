@@ -1,5 +1,12 @@
-﻿using Foundation;
+﻿using System.Collections.Generic;
+using Foundation;
+using MacTraining.Helpers;
+using Player.iOS.Adapters;
+using Player.Shared.Statics;
+using Player.iOS.Vc;
 using UIKit;
+using GalaSoft.MvvmLight.Ioc;
+using Player.IAdapters;
 
 namespace Player.iOS
 {
@@ -20,6 +27,15 @@ namespace Player.iOS
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
+
+            var navigationService = new NavigationService();
+            navigationService.SetPagesDictionary(new Dictionary<PageNames, UIViewController>{
+                {PageNames.Preapp, Statics.GetInstance<PreappVc>(PageNames.Preapp)},
+                {PageNames.Main, Statics.GetInstance<MainVc>(PageNames.Main)},
+                {PageNames.Settings, Statics.GetInstance<SettingsVc>(PageNames.Settings)}
+            });
+
+            SimpleIoc.Default.Register<INavigationService>(() => navigationService);
 
             return true;
         }

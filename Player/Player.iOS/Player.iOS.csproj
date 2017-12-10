@@ -110,6 +110,9 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Storyboards\PreappStoryboard.storyboard" />
+    <InterfaceDefinition Include="Storyboards\MainStoryboard.storyboard" />
+    <InterfaceDefinition Include="Storyboards\SettingsStoryboard.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -119,6 +122,33 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Vc\PreappVc.cs" />
+    <Compile Include="Vc\PreappVc.designer.cs">
+      <DependentUpon>PreappVc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Statics.cs" />
+    <Compile Include="Vc\MainVc.cs" />
+    <Compile Include="Vc\MainVc.designer.cs">
+      <DependentUpon>MainVc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vc\SettingsVc.cs" />
+    <Compile Include="Vc\SettingsVc.designer.cs">
+      <DependentUpon>SettingsVc.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Player.IAdapters\Player.IAdapters.csproj">
+      <Project>{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}</Project>
+      <Name>Player.IAdapters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Player.iOS.Adapters\Player.iOS.Adapters.csproj">
+      <Project>{549D6D71-AA0E-486F-9328-066A23839AF4}</Project>
+      <Name>Player.iOS.Adapters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Player.Shared\Player.Shared.csproj">
+      <Project>{678AFFF0-CF6A-473A-B73C-B5A53F2D005B}</Project>
+      <Name>Player.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
