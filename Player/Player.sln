@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Player.iOS.Adapters", "Play
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Player.Shared", "Player.Shared\Player.Shared.csproj", "{678AFFF0-CF6A-473A-B73C-B5A53F2D005B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Player.IAdapters", "Player.IAdapters\Player.IAdapters.csproj", "{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{678AFFF0-CF6A-473A-B73C-B5A53F2D005B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{678AFFF0-CF6A-473A-B73C-B5A53F2D005B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{678AFFF0-CF6A-473A-B73C-B5A53F2D005B}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Release|iPhone.Build.0 = Release|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{0BFCFBC8-3A2C-4348-95D1-1E3CB3028D93}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

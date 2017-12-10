@@ -9,5 +9,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Vm\" />
+    <Folder Include="Statics\" />
   </ItemGroup>
 </Project>
