@@ -12,12 +12,6 @@ namespace Player.iOS.Vc
         {
         }
 
-        public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
-            SimpleIoc.Default.GetInstance<INavigationService>().PopAllFromBackstack();
-        }
-
         partial void GoBack_Click(UIButton sender)
         {
             SimpleIoc.Default.GetInstance<INavigationService>().GoBack();

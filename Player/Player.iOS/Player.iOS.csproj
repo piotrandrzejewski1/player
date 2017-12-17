@@ -100,6 +100,17 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-640x960.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-640x1136.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-320x480.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-768x1024.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-1024x768.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Webp.net-resizeimage.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Webp.net-resizeimage %281%29.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Webp.net-resizeimage %283%29.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Webp.net-resizeimage %284%29.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Webp.net-resizeimage %285%29.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -107,6 +118,7 @@
     <Folder Include="Storyboards\" />
     <Folder Include="Helpers\" />
     <Folder Include="Cells\" />
+    <Folder Include="Resources\Icons\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -135,6 +147,12 @@
     <Compile Include="Vc\SettingsVc.designer.cs">
       <DependentUpon>SettingsVc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\AppColors.cs" />
+    <Compile Include="Helpers\Stylization.cs" />
+    <Compile Include="WhatsNewImageCell.cs" />
+    <Compile Include="WhatsNewImageCell.designer.cs">
+      <DependentUpon>WhatsNewImageCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Player.IAdapters\Player.IAdapters.csproj">
@@ -149,6 +167,11 @@
       <Project>{678AFFF0-CF6A-473A-B73C-B5A53F2D005B}</Project>
       <Name>Player.Shared</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icons\splash%402x.png" />
+    <BundleResource Include="Resources\Icons\splash%403x.png" />
+    <BundleResource Include="Resources\Icons\whatsnew%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

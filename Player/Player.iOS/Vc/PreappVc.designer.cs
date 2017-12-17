@@ -14,12 +14,43 @@ namespace Player.iOS.Vc
     [Register ("PreappVc")]
     partial class PreappVc
     {
-        [Action ("GoToMainButton_Click:")]
+        [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void GoToMainButton_Click (UIKit.UIButton sender);
+        UIKit.UIButton DismissButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView MainContainer { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton RateButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableView TableView { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (DismissButton != null) {
+                DismissButton.Dispose ();
+                DismissButton = null;
+            }
+
+            if (MainContainer != null) {
+                MainContainer.Dispose ();
+                MainContainer = null;
+            }
+
+            if (RateButton != null) {
+                RateButton.Dispose ();
+                RateButton = null;
+            }
+
+            if (TableView != null) {
+                TableView.Dispose ();
+                TableView = null;
+            }
         }
     }
 }

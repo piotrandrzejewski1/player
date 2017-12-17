@@ -45,7 +45,6 @@ namespace Player.iOS.Adapters
             if (controllersLength == 1)
                 return;
 
-            //todo: check if working properly
             var controllerToSetup = controllers[controllers.Length - 1];
             NavigationController.ViewControllers = new UIViewController[] { controllerToSetup };
             for (int i = 0; i < controllersLength; i++)
